@@ -1,0 +1,25 @@
+[project]
+name = "ewh_fleet_lib"
+version = "0.1.0"
+description = "Electric Water Heater Fleet Simulation and Control"
+requires-python = ">=3.9,<3.12"
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "matplotlib>=3.5",
+    "pyomo>=6.4,",
+    "plotly>=5.0",
+    "tqdm>=4.0",
+    "scipy>=1.7",
+    "pyoptinterface>=0.2.0",
+    "pysimdeum"
+
+    # Add Gurobi or other solvers as needed
+]
+[tool.setuptools.packages.find]
+include = [
+    "ewh_model",
+    "water_consumption",
+    "simulation_runner",
+    "optimization_algorithms"
+]
